@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irresistible Food</title>
+    <script src="./assets/landing-js/jquery.js"></script>
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/landing-css/style.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- please ensure to copy the above css links for mdbootstrap as well -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-none navlinkc">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="./index.html">
+          <img
+            src="./assets/langing-page-images/Logo.png"
+            height="20"
+            alt="irresistible food Logo"
+            loading="lazy"
+          />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 m-5">
+          <li class="nav-item">
+            <a class="nav-link navlinkc" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navlinkc" href="./assets/recipe.html">Recipes</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link navlinkc" href="./assets/blog.html">Blog</a>
+          </li>
+          <!-- <li class="nav-item ">
+            <a class="nav-link navlinkc" href="#">Snacks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navlinkc" href="#">Order</a>
+          </li> -->
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+        </a>
+  
+        
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuAvatar"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuAvatar"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Logged in as Guest</a>
+            </li>
+            <li>
+              <a class="dropdown-item" data-mdb-toggle="tooltip" data-mdb-placement="left" title="Sign up feature coming soon" href="#">Sign up</a>
+            </li>
+            <li>
+              <a class="dropdown-item" data-mdb-toggle="tooltip" data-mdb-placement="left" title="Login feature coming in a later build" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+<!-- Background image on the first section-->
+<div
+id="intro-example"
+class="container-fluid p-5 text-center bg-image hero"
+style="background-image: url('./assets/langing-page-images/hero1.png');"
+>
+	<div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+		  <div class="d-flex justify-content-center align-items-center h-100">
+			      <div class="text-white">
+				            <h1 class="mb-3">Relax and Experience</h1>
+					    <h5 class=tural"mb-4">The Natural Taste of Nigeria Cuisine & Recipes</h5>
+						            <a
+									            class="btn btn-outline-light btn-lg m-2 herobtn"
+										            href="./assets/recipe.html"
+											            role="button"
+												            rel="nofollow"
+													            target="_blank"
+														          >
+      >LETS GO TO
+      KITCHEN</a
+      >
+      <a
+        class="btn btn-outline-light btn-lg m-2 herobtn"
+        href="./assets/blog.html"
+        target="_blank"
+        role="button"
+      >READ OUR BLOG</a
+      >
+    </div>
+  </div>
+</div>
+</div>
+<!-- Background image on the first section -->
+
+
+<!-- Subscription section -->
+<div class="container mt-5">
+    <div class="subtext mt-5 text-center">
+        <h6>Subscribe Now! Stay on top of the latest recipes.</h6>
+    </div>
+
+    <form class="row mt-5">
+        <!-- Name input -->
+        <div class="col m-2 form-outline mb-4">
+          <input type="text" id="form5Example1" class="form-control" />
+          <label class="form-label" for="form5Example1">Name</label>
+        </div>
+      
+        <!-- Email input -->
+        <div class="col m-2 form-outline mb-4">
+          <input type="email" id="form5Example2" class="form-control" />
+          <label class="form-label" for="form5Example2">Email address</label>
+        </div>
+           
+        <!-- Submit button -->
+        <div class="col m-2">
+        <button type="submit" class="btn btn-primary btn-block mb-4 herobtn">Subscribe</button>
+        </div>
+      </form>
+</div>
+
+<!-- subscription area -->
+
+
+<div class="container mt-5">
+    <div class="recips mt-5">
+      <hr><h3 class="text-center">Recipes</h3><hr>
+    </div>
+    <div class="container">
+        <!--Grid row-->
+
+
+
+<div class="row mt-5">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
+      <!-- Image with no mask -->
+      <div class="bg-image rounded-6 masking bg1">
+        <img
+          src="./assets/langing-page-images/real_breaskfast.jpg"
+          class="w-100"
+          alt="Nigerian Breakfast"
+        />
+        <!-- Mask -->
+        <div class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        ">
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-50
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h2 class="fw-bold text-white mb-4">Breakfast</h2>
+              <a type="button" href="./assets/recipe.html" class="btn btn-warning btn-rounded mt-3 btn1">View Recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with black mask -->
+      <div class="bg-image rounded-6 masking bg2">
+        <img
+          src="./assets/langing-page-images/pizzaa.png"
+          class="w-100"
+          alt="Pizza"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-50
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h2 class="fw-bold text-white mb-4">Lunch</h2>
+              <a type="button" href="./assets/recipe.html" class="btn btn-warning btn-rounded mt-3 btn2">View Recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with violet mask -->
+      <div class="bg-image rounded-6 masking bg3">
+        <img
+          src="./assets/langing-page-images/dinner.jpg"
+          class="w-100"
+          alt="Nigerian Dinner"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-50
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h2 class="fw-bold text-white mb-4">Dinner</h2>
+              <a type="button" href="./assets/recipe.html" class="btn btn-warning btn-rounded mt-3 btn3">View Recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Grid row-->
+  <div class="row mt-5">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <!-- Image with no mask -->
+      <div class="bg-image rounded-6 masking bg4">
+        <img
+          src="./assets/langing-page-images/chapondengu.jpg"
+          class="w-100"
+          alt="Snacks"
+        />
+        <!-- Mask -->
+        <div class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        ">
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-50
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h2 class="fw-bold text-white mb-4">Snacks</h2>
+              <a type="button" href="./assets/recipe.html" class="btn btn-warning btn-rounded mt-3 btn4">View Recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with black mask -->
+      <div class="bg-image rounded-6 masking bg5">
+        <img
+          src="./assets/langing-page-images/afang_poundo.jpg"
+          class="w-100"
+          alt="Afang and Swallow"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-50
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h2 class="fw-bold text-white mb-4">Dinner</h2>
+              <a type="button" href="./assets/recipe.html" class="btn btn-warning btn-rounded mt-3 btn5">View Recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with violet mask -->
+      <div class="bg-image rounded-6 masking bg6">
+        <img
+          src="./assets/langing-page-images/pancakes.jpg"
+          class="w-100 img-fluid"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+          class="mask"
+          style="
+            background: linear-gradient(
+              to bottom,
+              hsla(0, 0%, 0%, 0),
+              hsla(263, 80%, 20%, 0.5)
+            );
+          "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-50
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h2 class="fw-bold text-white mb-4">Light Foods</h2>
+              <a type="button" href="./assets/recipe.html" class="btn btn-warning btn-rounded mt-3 btn6">View Recipe</a>
+            </div>
+            <div>                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+
+<div class="container mt-5 about">
+    <div class="abouttext mt-5">
+        <hr><h2 class=" text-center mt-5">About us</h2><hr>
+    </div>
+
+<div class="row ">
+        <div class="col-md-6 mt-5">
+            <img src="./assets/langing-page-images/chef2.jpg" alt="" class="img-fluid abtimg mt-5">
+        </div>
+        <div class="abttxt mt-5 text-center col-md-6 align-self-center">
+            <h3 class="text-center mb-3">WHO WE ARE</h3>
+            <p>As a Nigerian Restaurant, we pride ourselves on bringing the rich flavors and traditions of Africa to your table. Our menu is a celebration of the diverse culinary heritage of the continent, with dishes that draw inspiration from countries like Ghana, Cameroon, and Sierra Leone, as well as our own Nigerian roots.
+	    Our chefs are passionate about using only the freshest and highest-quality ingredients in our recipes, many of which are sourced directly from local farmers and markets. We believe that the key to great African cuisine lies in the use of bold spices, aromatic herbs, and traditional cooking techniques that have been passed down through generations.
+	    Our menu features a wide range of classic African dishes, from hearty stews and soups to flavorful grilled meats and seafood. Some of our most popular items include:
+	    - Jollof Rice: This iconic Nigerian dish is a spicy one-pot meal made with long-grain rice, tomatoes, onions, peppers, and a blend of aromatic spices.
+	    - Egusi Soup: A rich and savory soup made with melon seeds, spinach, meat or fish, and a variety of vegetables.
+	    - Suya: A popular Nigerian street food made with skewered beef or chicken that's been marinated in a spicy blend of chili peppers, salt, and other seasonings before being grilled over an open flame.
+	    - Plantain Chips: A crispy and addictive snack made by slicing ripe plantains thinly and frying them until they're golden brown.
+	    We hope that our website will give you a taste of the flavors and traditions that make African cuisine so unique and delicious. Whether you're a seasoned foodie or just discovering the wonders of African cooking for the first time, we invite you to come explore our menu and experience the richness and complexity of this vibrant culinary tradition.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+  <hr><h2 class="text-center">Blog</h2><hr>
+</div>
+
+<div class="container mt-5">
+    
+  <div class="row d.flex justify-content-center align-items-center mt-5">
+      
+      <div class="col-md-4 text-dark">
+          <p>16<sup>th</sup> December 2023</p>
+          <h2>The negative effect of Pizza on the human body</h2>
+	  <p>Eating too much pizza, especially with high-calorie toppings like pepperoni and sausage...<a href="./assets/blog.html">[read more]</a></p>
+      </div>
+      <div class="col-md-8">
+          <img class="img-fluid abtimg" src="./assets/langing-page-images/Shouldwomen.jpg" alt="">
+      </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row mt-5">
+      <div class="col-md-4">
+          <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid abtimg" src="./assets/langing-page-images/food-increase-male-fertility.jpg" alt="Food Men Need">
+	      <p>16<sup>th</sup> December 2023</p>
+              <h4 class=" text-dark text-center mt-2">Food men need to boost their Fertilization</h4>
+              <p class="text-dark text-center">Men can consume foods such as leafy greens like spinach and kale...<a href="./assets/blog.html">[read more]</a></p>
+            </div>
+      </div>
+      <div class="col-md-4">
+          <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid abtimg" src="./assets/langing-page-images/high-cost-of-food.jpg" alt="What Causes Hight Food Price">
+	      <p>16<sup>th</sup> December 2023</p>
+              <h4 class=" text-dark text-center mt-2">The cause of the high cost of food Production in Nigeria</h4>
+              <p class="text-dark text-center">The high cost of food production in Nigeria is caused by several...<a href="./assets/blog.html">[read more]</a></p>
+            </div>
+      </div>
+      <div class="col-md-4">
+          <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid abtimg" src="./assets/langing-page-images/effect_of_starchy_on_elders.jpg" alt="Effect of Starchy Food on Elderly">
+	      <p>16<sup>th</sup> December 2023</p>
+              <h4 class=" text-dark text-center mt-2">Effect of Starchy Food on Elderly from 60 years</h4>
+              <p class="text-dark text-center">As we age, our bodies undergo several physiological changes that...<a href="./assets/blog.html">[read more]</a></p>
+            </div>
+      </div>
+  </div>
+  <div class="container mt-5"><a href="./assets/blog.html"> <h6 class="text-end">View more <i class="fa-solid fa-circle-arrow-right"></i></h6></a></div>
+</div>
+
+
+<!-- Contact section -->
+
+<div class="container mt-5">
+    <div class="contactext mt-5">
+        <h2 class="text-center">Your Feedback is Paramount to Us, Please Get In Touch!</h2>
+    </div>
+    <div class="contactform">
+        <form>
+            <!-- Name input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="form4Example1" class="form-control" />
+              <label class="form-label" for="form4Example1">Name</label>
+            </div>
+          
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form4Example2" class="form-control" />
+              <label class="form-label" for="form4Example2">Email address</label>
+            </div>
+          
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+              <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+              <label class="form-label" for="form4Example3">Message</label>
+            </div>
+          
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+              <label class="form-check-label" for="form4Example4">
+                Send me a copy of this message
+              </label>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-lg mb-4 herobtn d-md-flex justify-content-md-center">Send</button>
+          </form>
+    </div>
+</div>
+
+
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">
+  Launch static backdrop modal
+</button> -->
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-mdb-backdrop="static"
+  data-mdb-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="modal-title" id="staticBackdropLabel">Welcome to Irresistible Food</p>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Subscribe to our free weekly newsletter and get up to date with Irresistible Food</p>
+        <form>
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="form5Example1" class="form-control" />
+          <label class="form-label" for="form5Example1">Name</label>
+        </div>
+      
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="form5Example2" class="form-control" />
+          <label class="form-label" for="form5Example2">Email address</label>
+        </div>
+      
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
+          <label class="form-check-label" for="form5Example3">
+            I have read and agree to the terms
+          </label>
+        </div>
+      
+        <!-- Submit button -->
+        <!-- <button type="submit" class="btn btn-primary btn-block mb-4">Subscribe</button> -->
+      </form></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Subscribe</button>
+        <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1 "
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f" href="https://www.facebook.com/tonerow.etim?mibextid=ZbWKwL"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram" href="https://www.instagram.com/tonerowetim?igsh=MW1wZXdoeWl5ZmVvaw=="></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin" href="https://www.linkedin.com/in/anthony-etim-09686a15a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" ></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github" href="https://github.com/TonerowEEtim"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href="#">Irresistible Food</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    <!-- MDB -->
+    
+
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
+    ></script>
+    <script src="./assets/landing-js/script.js">async</script>
+</body>
+</html>
